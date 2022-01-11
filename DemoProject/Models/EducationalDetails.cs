@@ -1,5 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DemoProject.Models
@@ -33,6 +32,7 @@ namespace DemoProject.Models
         [Required]
         public bool IsActiveBacklogs { get; set; }
 
+        [MaxLength(30)]
         public string AcademicProjects { get; set; }
 
         [ForeignKey("UserDetailsId")]

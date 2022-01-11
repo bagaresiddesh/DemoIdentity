@@ -4,16 +4,14 @@ using DemoProject.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace DemoProject.Migrations
+namespace DemoProject.Migrations.DemoProject
 {
     [DbContext(typeof(DemoProjectContext))]
-    [Migration("20220106124253_done")]
-    partial class done
+    partial class DemoProjectContextModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
